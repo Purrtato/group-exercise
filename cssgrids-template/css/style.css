@@ -1,8 +1,41 @@
+:root {
+	--margin: 10px 0;
+	--gap: 10px;
+}
+
+
 /** Not allowed to change this initial CSS code **/
 body {
 	background: url(../img/12_col.gif) center top repeat-y;
 	background-size: 90%;
+	margin: 0;
 }
 /*************************************************/
 
 
+div, 
+section,
+aside,
+footer,
+header {
+	border: 1px solid black;
+	margin: var(--margin);
+}
+
+p {
+	margin: 0;
+}
+
+main-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: var(--gap);
+}
+
+
+
+@media (min-width: 768px) {
+	main-grid {
+		grid-template-columns: repeat(12, 1fr);
+	}
+}
