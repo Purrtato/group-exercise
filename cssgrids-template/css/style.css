@@ -1,6 +1,6 @@
 :root {
 	--margin: 10px 0;
-	--gap: 10px;
+	--gap: 5px;
 }
 
 
@@ -18,7 +18,7 @@ section,
 aside,
 footer,
 header {
-	border: 1px solid black;
+	border: 2px solid black;
 	margin: var(--margin);
 }
 
@@ -26,16 +26,26 @@ p {
 	margin: 0;
 }
 
-main-grid {
+.main-grid {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: var(--gap);
 }
 
+.footer-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: var(--gap);
+	padding: 5px;
+	margin: 0;
+}
 
+.item {
+	height: 100px;
+}
 
 @media (min-width: 768px) {
 	main-grid {
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
