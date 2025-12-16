@@ -34,7 +34,7 @@ p {
 
 .footer-grid {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: 1fr;
 	grid-gap: var(--gap);
 	padding: 5px;
 	margin: 0;
@@ -45,7 +45,29 @@ p {
 }
 
 @media (min-width: 768px) {
-	main-grid {
-		grid-template-columns: repeat(4, 1fr);
+	.main-grid {
+		grid-template-columns: repeat(12, 1fr);
 	}
+	.box1,
+	.box2,
+	.box3 {
+		grid-column: span 4;
+	}
+	.content, .sidebar {
+		grid-column: span 6;
+	}
+	.footer-grid {
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: 10px;
+	}
+	.item {
+	height: 150px;
+	}
+
+}
+
+
+
+@media (min-width: 960px) {
+	
 }
