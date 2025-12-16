@@ -1,6 +1,7 @@
 :root {
 	--margin: 10px 0;
 	--gap: 5px;
+	--column-gap: 20px;
 }
 
 
@@ -29,13 +30,15 @@ p {
 .main-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-gap: var(--gap);
+	row-gap: var(--gap);
+	column-gap: var(--column-gap);
 }
 
 .footer-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-gap: var(--gap);
+	row-gap: var(--gap);
+	column-gap: var(--column-gap);
 	padding: 5px;
 	margin: 0;
 }
@@ -69,5 +72,37 @@ p {
 
 
 @media (min-width: 960px) {
-	
+	.box1,
+	.box3 {
+		grid-column: span 3;
+	}
+	.box2 {
+		grid-column: span 6;
+	}
+	.content {
+		grid-column: span 8;
+	}
+	.sidebar {
+		grid-column: span 4;
+	}
+
+	.footer-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (min-width: 1200px) {
+	.box1,
+	.box3 {
+		grid-column: span 2;
+	}
+	.box2 {
+		grid-column: span 8;
+	}
+	.content {
+		grid-column: span 9;
+	}
+	.sidebar {
+		grid-column: span 3;
+	}
 }
