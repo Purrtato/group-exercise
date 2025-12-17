@@ -17,9 +17,7 @@ body {
 div, 
 section,
 aside,
-footer,
-header {
-	border: 2px solid black;
+footer {
 	margin: var(--margin);
 }
 
@@ -28,6 +26,10 @@ main,
 footer {
 	width: 88%;
 	margin: 0 auto;
+}
+
+.item {
+	border: 2px solid black;
 }
 
 p {
@@ -56,6 +58,30 @@ p {
 	height: 100px;
 }
 
+.flex-header {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	column-gap: 10px;
+	border: none;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.button {
+	border: 1px solid black;	
+	background-color: lightgray;
+	text-decoration: none;
+	color: black;
+}
+
+.button4 {
+	margin-left: auto;
+}
+
+
 @media (min-width: 768px) {
 	.main-grid {
 		grid-template-columns: repeat(12, 1fr);
@@ -77,25 +103,6 @@ p {
 	}
 
 }
-
-.headerflex {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.button {
-	border: 1px solid black;	
-	background-color: lightgray;
-	text-decoration: none;
-	color: black;
-	margin-left: 10px;
-}
-
-#button-4header {
-	margin-left: auto;
-
-
 
 @media (min-width: 960px) {
 	.box1,
