@@ -23,6 +23,13 @@ header {
 	margin: var(--margin);
 }
 
+header,
+main,
+footer {
+	width: 88%;
+	margin: 0 auto;
+}
+
 p {
 	margin: 0;
 }
@@ -32,6 +39,7 @@ p {
 	grid-template-columns: 1fr;
 	row-gap: var(--gap);
 	column-gap: var(--column-gap);
+	margin: 10px auto;
 }
 
 .footer-grid {
@@ -40,7 +48,8 @@ p {
 	row-gap: var(--gap);
 	column-gap: var(--column-gap);
 	padding: 5px;
-	margin: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .item {
