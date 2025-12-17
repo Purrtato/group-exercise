@@ -101,6 +101,20 @@ p {
 
 }
 
+.content {
+	background-color: beige;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+
+.content-containter {
+	border: 2px solid black;
+	height: 75px;
+	width: 290px;
+	
+}
 
 @media (min-width: 768px) {
 	.main-grid {
