@@ -78,6 +78,23 @@ p {
 
 }
 
+.headerflex {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.button {
+	border: 1px solid black;	
+	background-color: lightgray;
+	text-decoration: none;
+	color: black;
+	margin-left: 10px;
+}
+
+#button-4header {
+	margin-left: auto;
+
 
 
 @media (min-width: 960px) {
